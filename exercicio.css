@@ -69,14 +69,16 @@
 
 @keyframes atacando {
   0% {
-    transform: translateZ(1);
+    transform: translateY(0);
   }
   100% {
-    transform: translateZ(30px);
+    transform: translateY(-50%);
   }
 }
 
 .atacando {
-  animation: atacando 2s infinite, crescendo 2s infinite;
+  z-index: 3;
+  animation: atacando 0.9s infinite alternate forwards;
+
   border: solid 8px red;
 }
