@@ -67,3 +67,16 @@
   animation: crescendo 2s infinite;
 }
 
+@keyframes atacando {
+  0% {
+    transform: translateZ(1);
+  }
+  100% {
+    transform: translateZ(30px);
+  }
+}
+
+.atacando {
+  animation: atacando 2s infinite, crescendo 2s infinite;
+  border: solid 8px red;
+}
